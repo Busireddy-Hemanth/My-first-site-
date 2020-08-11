@@ -1,0 +1,24 @@
+*{
+  padding:0px;
+  margin:0px;
+}
+body{
+  width:100%;
+  background-image: url("Hemanth1.jpg");
+  dispaly:flex;
+  font-family: cursive;
+  align-items: center;
+
+}
+.Menubar
+{
+justify-content: center;
+display:flex;
+width: 100%;
+
+}
+.insta
+{position: relative;
+margin: 40px;
+background-color:#f4f4f4
+}
