@@ -1,0 +1,127 @@
+<html>
+<head>
+<!--
+<script type="text/javascript">
+function disp()
+{
+var a=document.getElementById("name").value;
+var b=document.getElementById("pin").value;
+var d=document.getElementById("add").value;
+var e=document.getElementById("mail").value;
+var f=document.getElementById("pass").value;
+var g=document.forms[0].branch;
+var h=document.forms[0].colleges;
+var j=document.forms[0].c1;
+var k=document.forms[0].c2;
+var l=document.forms[0].c3;
+var m=document.forms[0].c4;
+if(document.getElementById("male").checked){
+c=document.getElementById("male").value;
+}
+else if(document.getElementById("female").checked){
+c=document.getElementById("female").value;
+}
+
+if(a!=""){
+document.write("NAME :"+a+"<br/>");
+document.write("<br/>");}
+if(b!=""){
+document.write("PIN :"+b+"<br/>");
+document.write("<br/>");}
+document.write("GENDER :"+c+"<br/>");
+document.write("<br/>");
+
+if(d!=""){
+document.write("ADDRESS  :"+d+"<br/>");
+document.write("<br/>");}
+if(e!=""){
+document.write("EMAIL :"+e+"<br/>");
+document.write("<br/>");}
+if(f!=""){
+document.write("PASSWORD : "+f+"<br/>");
+document.write("<br/>");}
+document.write("BRANCH : "+g.options[g.selectedIndex].value+"<br/>");
+document.write("<br/>");
+if(j.checked ||k.checked ||l.checked || m.checked) {
+document.write("COURSES :");}
+if(j.checked)
+document.write("java"+"</br>");
+if(k.checked)
+document.write("html"+"</br>");
+if(l.checked)
+document.write("android"+"</br>");
+if(m.checked)
+document.write("python"+"</br>");
+document.write("<br/>");
+document.write("COLLEGE : "+h.options[h.selectedIndex].value+"<br/>");
+
+}
+</script>-->
+</head>
+<body style="background-color:black">
+<center>
+<form name="regis" >
+<table  height="600" width="400">
+<caption><h1><ins><font color="white" font size="6"><b><i>REGISTRATION FORM</i></b></font></ins></h1></caption>
+<tr>
+<td colspan="2"><label for="name"><font color="white"><b>NAME</b></font></label></td>
+<td><input type="text" id="name" name="t1" ></td>
+</tr>
+<tr>
+<td colspan="2"><label for="pin"><font color="white"><b>PIN</b></font></label></td>
+<td><input type="text" id="pin" name="t2"></td>
+</tr>
+<tr>
+<td colspan="2"><label><font color="white"><b>GENDER</b></font></label></td>
+<td><input type="radio" id="male" name="gender" value="MALE" required><label for="male"><font color="white">MALE</font></label><input type="radio" id="female" name="gender" required value="FEMALE"><label for="female"><font color="white">FEMALE</font></label></td>
+</tr>
+<td colspan="2"><label for="add"><font color="white"><b>ADDRESS</b></font></td>
+<td><textarea name="ta1" id="add"  rows="5" cols="20"></textarea></td>
+</tr>
+<td colspan="2"><label for="mail"><font color="white"><b>MAIL-ID</b></font></label></td>
+<td><input type="email" id="mail" name="email" required></td>
+</tr>
+
+<td colspan="2"><label for="pass"><font color="white"><b>PASSWORD</b></font></label></td>
+<td><input type="password" id="pass" name="password"></td>
+</tr>
+<tr>
+<td colspan="2"><label for="branch"><font color="white"><b>BRANCH</b></font></label></td>
+<td>
+<select id="branch" name="branch">
+<option value="Computer Science">CSE</option>
+<option value="Electronics">ECE</option>
+<option value="Mechanical">MECH</option>
+<option value="Civil">CIVIL</option>
+<option value="Information">IT</option>
+</select></td>
+</tr>
+<tr>
+<td colspan="2"><label for="course"><font color="white"><b>COURSES</b></font></label></td>
+<td>
+<input type="checkbox" id="c1" value="JAVA" name="c1"><label for="c1"><font color="white">JAVA</font></label><input type="checkbox" id="c2" value="HTML" name="c2"><label for="c2"><font color="white">HTML</font></label></td>
+</tr>
+<tr>
+<td colspan="2"></td>
+<td><input type="checkbox"  id="c3" value="ANDROID" name="c3"><label for="c3"><font color="white">ANDROID</font></label><input type="checkbox" id="c4" name="c4" value="PYTHON"><label for="c4"><font color="white">PYTHON</font></label></td>
+</tr>
+<tr>
+<td colspan="2"><label for="colleges"><font color="white"><b>COLLEGES</b></font></label></td>
+<td>
+<select  id="colleges" name="colleges" size="3">
+<option value="GIET ENGINEERING COLLEGE">GEC</option>
+<option value="GIET  COLLEGE OF ENGINEERING">GCE</option>
+<option value="PRAGATI ENGINEERING COLLEGE">Pragati</option>
+<option value="ADITYA ENGINEERING COLLEGE">Aditya</option>
+<option value="BVC ENGINEERING COLLEGE">Bvc</option>
+<option value="KITS ENGINEERING COLLEGE">Kits</option>
+</select></td>
+</tr>
+<tr>
+<td colspan="" ><input type="submit" value="SUBMIT" onclick=disp()></td>
+<td><input type="reset" value="RESET"></td>
+</tr>
+</table>
+</form>
+</body>
+</html>
