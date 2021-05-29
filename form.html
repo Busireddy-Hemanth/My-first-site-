@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Free Web tutorials">
+  <meta name="keywords" content="Form , Input tag,input types in html">
+  <meta name="author" content="Hemanth">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+  </head>
+  <body>
+    <div class="" style="height:auto;width:auto;border:3px solid lightgray;padding:10px;border-radius:5px">
+      <!--
+       <form class="" action="index.html" method="post">
+        <label for="H">Male</label>
+        <input type="radio" name="Gender" value="" id="H">
+        <label for="i">Female</label>
+        <input type="radio" name="Gender" value="" id='i'>
+      </form>
+    -->
+    <fieldset style="border-radius:10px">
+      <legend><h3>User Form</h3></legend>
+      <form class="Form" action="index.html" method="post">
+        <label for="email">Email address</label><br/>
+        <input style="border-radius:5px" type="mail" name="" value="" placeholder="name@example.com">
+        </br><br>
+        <label for="single">Select Degree-Single select</label><br/>
+        <select class="select" name="select" id=single>
+          <option value="">10</option>
+          <option value="">12</option>
+          <option value="">Degree</option>
+          <option value="">Engineering</option>
+        </select><br><br>
+        <label for="multiple">Favourite Places-Multiple</label><br>
+        <select class="select" name="select" multiple=true id=multiple>
+          <option value="">HYD</option>
+          <option value="">KERALA</option>
+          <option value="">MUMBAI</option>
+          <option value="">KASI</option>
+        </select><br><br>
+        <label for="textarea">Explain a funniest movement in college.Max-length-300.(don't accept numbers )</label><br>
+        <textarea name="name" id="textarea" rows="5" cols="80" maxlength="50" placeholder="Ex:In My college there is a hostel"></textarea>
+        <br>
+        <span>Select Dream Job</span><br>
+        <input type="checkbox" name="" value="" id="Software Engineer">
+        <label for="Software Engineer">Software Engineer</label>
+        <br>
+        <input type="checkbox" name="" value="" id="Manager">
+        <label for="Manager">Manager</label>
+        <br>
+        <input type="checkbox" name="" value="" id="Product Owner">
+        <label for="Product Owner">Product Owner</label>
+        <br>
+        <input type="checkbox" name="" value="" id="senior president">
+        <label for="Software Engineer">Senior President</label>
+      </form>
+    </fieldset>
+    </br>
+    <button type="button" name="button" style="float:right;background-color:blue">Submit</button><br><br>
+    </div>
+  </body>
+</html>
